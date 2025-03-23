@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Tutor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Business Tutor</h1>
+    </header>
+    <main>
+        <section id="input-section">
+            <textarea id="prompt-input" placeholder="Enter your business question"></textarea>
+                        <input type="file" id="image-input" accept="image/*">
+                        <img id="image-preview" src="#" alt="Image Preview" style="max-width: 400px; display:none;">
+                        <button id="analyze-button">Analyze</button>
+                    </section>
+                    <section id="output-section">
+                        <h2>Analysis Result</h2>
+                        <div id="analysis-result"></div>
+                    </section>
+                    <section id="past-prompts">
+                        <h2>Past Prompts</h2>
+                        <ul id="past-prompts-list">
+                        </ul>
+                    </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Business Tutor</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

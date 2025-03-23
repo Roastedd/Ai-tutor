@@ -1,0 +1,53 @@
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "/usr/local/bin/node",
+      "args": [
+        "/usr/local/lib/node_modules/@modelcontextprotocol/server-sequential-thinking/dist/index.js"
+      ],
+      "env": {
+        "PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "NODE_PATH": "/usr/local/lib/node_modules",
+        "NODE_ENV": "development",
+        "DEBUG": "mcp:*",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "puppeteer": {
+      "command": "/usr/local/bin/node",
+      "args": [
+        "/usr/local/lib/node_modules/@modelcontextprotocol/server-puppeteer/dist/index.js"
+      ],
+      "env": {
+        "PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "NODE_PATH": "/usr/local/lib/node_modules",
+        "NODE_ENV": "development",
+        "DEBUG": "mcp:*",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "filesystem": {
+      "command": "/usr/local/bin/node",
+      "args": [
+        "/usr/local/lib/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js",
+        "/Users/edlyco/Documents/GitHub/AIQUESTIONS"
+      ],
+      "env": {
+        "PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "NODE_PATH": "/usr/local/lib/node_modules",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "brave-search": {
+      "command": "/usr/local/bin/node",
+      "args": [
+        "/usr/local/lib/node_modules/@modelcontextprotocol/server-brave-search/dist/index.js"
+      ],
+      "env": {
+        "PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "NODE_PATH": "/usr/local/lib/node_modules",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}
